@@ -1,0 +1,262 @@
+/* https://coolors.co/88498f-00c2d1-f9e900-f17300-ff595e */
+
+.slabo-27px-regular {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+}
+
+.playpen-sans-deva-0 {
+    font-family: "Playpen Sans Deva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+body {
+    background-color: #00C2D1;
+    color: black;
+    margin: 0px;
+    font-family: "Playpen Sans Deva", cursive;
+    /* border: 1px black dotted; */
+}
+
+header {
+    /* border: 1px black dotted; */
+    background-color: #FF595E;
+    padding: 0 20px;
+    color: #88498F;
+    margin: 0px;
+    height: 65px;
+}
+
+main {
+    /* border: 1px black dotted; */
+    margin: 0 20px;
+    padding: 15px;
+    background-color: #0D0;
+    border-radius: 20px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    position: relative;
+}
+
+#header-title h1 {
+    margin: 1px;
+    font-family: "Slabo 27px", serif;
+    position: absolute;
+    left: 30px;
+    z-index: 1;
+}
+
+#header-title h2 {
+    margin: 1px;
+    font-style: italic;
+    font-size: 20px;
+    position: absolute;
+    top: 27px;
+    left: 55px;
+    z-index: 0;
+}
+
+#header-title {
+    width: 200px;
+    text-align: right;
+    /* border: 1px black dotted; */
+    padding-bottom: 2px;
+    position: relative;
+}
+
+div {
+    /* border: 1px black dotted; */
+}
+
+form {
+    /* border: 1px black dotted; */
+}
+
+option {
+    font-family: inherit;
+}
+
+select {
+    font-family: inherit;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+#buttonOrder {
+    font-family: inherit;
+    border: 2px green dashed;
+    border-radius: 5px;
+    background-color: white;
+    padding-bottom: 0px;
+    margin-left: 3px;
+    transition: border 0.23s;
+    font-size: 50px;
+    position: absolute;
+    left: 70%;
+    bottom: 105px;
+    z-index: 30;
+}
+
+#buttonOrder:hover {
+    border: 2px gold solid;
+}
+
+textarea {
+    font-family: inherit;
+    border-radius: 7px;
+    border: 2px black solid;
+    padding: 3px 6px;
+    background-color: tomato;
+}
+
+.delivery {
+    background-color: #FF7B9C;
+    color: #88498F;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0px 2px;
+    border: 3px black solid;
+}
+
+.deliveryChoices label {
+    /* border: 1px black dotted; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+    border: 3px #381900 solid;
+    border-radius: 6px;
+}
+
+.deliveryChoices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.deliveryChoices label:hover {
+    border: white solid 3px;
+}
+
+.deliveryChoices label:has(input:checked) {
+    border: #ccc solid 3px;
+}
+
+.deliveryChoices label:has(input:checked):hover {
+    border: white solid 3px;
+}
+
+.non-bold {
+    font-weight: normal;
+}
+
+.pizzaCore {
+    border: 3px black solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 15px;
+    margin: 25px 0px;
+    background-color: #F17300;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.pizzaCore-element {
+    border-left: #88498F 5px solid;
+    padding: 0px 20px;
+    transition: border-color 0.05s;
+    position: relative;
+    z-index: 1;
+}
+
+.pizzaCore-element:hover {
+    border-color: gold;
+}
+
+.pizzaCore-element:has(textarea) {
+    margin-left: 7px;
+}
+
+.pizzaImage {
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 800px;
+    height: 414px;
+    position: absolute;
+    right: 100px;
+    bottom: 85px;
+    z-index: 0;
+}
+
+#crustSelection {
+    border: 2px black solid;
+    border-radius: 6px;
+    transition: border 0.23s;
+}
+
+#crustSelection:hover {
+    border-color: gold;
+}
+
+#garlicBreadPanel {
+    padding-top: 10px;
+    padding-left: 15px;
+    position: fixed;
+    background-color: white;
+    z-index: 50;
+    width: 40%;
+    top: 40%;
+    left: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 3px black solid;
+    border-radius: 15px;
+    display: none;
+}
+
+#garlicBreadPanel-options button {
+    width: 50px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: inherit;
+    box-shadow: 2px 2px 2px 2px #565656b2;
+    padding: none;
+}
+
+#garlicBreadPanel-options button:hover {
+    box-shadow: 1px 1px 1px 1px #565656b2;
+}
+
+#garlicBreadPanel-options-yes {
+    background-color: green;
+}
+
+#garlicBreadPanel-options-no {
+    background-color: red;
+}
+
+.seperator {
+    width: 2px;
+    height: 220px;
+    background-color: black;
+    position: absolute;
+    left: 53%;
+    bottom: 42px;
+    z-index: 30;
+}
+
+#pizzaCreate {
+    text-align: center;
+    font-size: 27px;
+}

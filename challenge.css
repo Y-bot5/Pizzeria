@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(166, 52, 35);
+    text-align: center;
+}
+
+#topBox {
+    background-color: rgb(255, 56, 62);
+    border: 5px black solid;
+    margin: 30px 310px;
+    padding: 40px;
+    color: black;
+}
+
+#styled {
+    font-style: italic;
+    color: white;
+}
+
+#bright {
+    color: pink;
+}
+
+.container {
+    background-color: rgb(246, 76, 76);
+    border: 2px rgb(172, 49, 22) solid;
+    padding: 0px 0px;
+    margin: 0px 100px;
+}
+
+.box {
+    background-color: rgb(165, 33, 0);
+    display: inline-block;
+    margin: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 250px;
+    padding-left: 110px;
+    padding-right: 110px;
+    color: white;
+    border-radius: 4%;
+}
