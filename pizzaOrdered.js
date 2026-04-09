@@ -3,7 +3,7 @@ const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 console.log("JavaScript: \"Ordering Pizza...\"");
 
 (async () => {
-    await fetch(`${URL}/up`);
+    await fetch(`${URL}`);
 })();
 
 const ordered = document.getElementById("ordered");
@@ -12,6 +12,7 @@ const cheese = document.getElementById("cheese");
 const garlicBread = document.getElementById("garlicBread");
 const delivery = document.getElementById("delivery");
 const toppings = document.getElementById("toppings");
+const extra = document.getElementById("extra");
 
 crust.innerHTML = "Pizza crust: " + sessionStorage.getItem("crustType");
 cheese.innerHTML = "Cheese amount: " + sessionStorage.getItem("cheeseAmount") + "%";
