@@ -1,4 +1,4 @@
-const URL = "https://api.counterapi.dev/v2/projects/Ybot5/counters/pizzeria";
+const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 
 console.log("JavaScript: \"Ordering Pizza...\"");
 

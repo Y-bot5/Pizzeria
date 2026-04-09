@@ -21,7 +21,7 @@ const garlicBread = document.getElementById("garlicBreadPanel");
 const textarea = document.getElementById("extra");
 const delivery = document.querySelector(".deliveryChoices");
 const pizzaCount = document.getElementById("pizzaCount");
-const URL = "https://api.counterapi.dev/v2/projects/Ybot5/counters/pizzeria";
+const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria";
 
 let garlicBreadOrdered = false;
 
@@ -95,7 +95,7 @@ function submitPizzaToMemory() {
     sessionStorage.setItem("cheeseAmount", inputCheese.value);
     sessionStorage.setItem("garlicBread", garlicBreadOrdered ? "Yes" : "No");
     sessionStorage.setItem("delivery", delivery.querySelector("input[name='delivery']:checked").value);
-    sessionStorage.setItem("extra", textarea.value);
+    sessionStorage.setItem("extra", "\"" + textarea.value + "\"");
     sessionStorage.setItem("toppings", [
         "<br>    ○ Ham: " + (inputHam.checked ? "Yes" : "No"),
         "<br>    ○ Onion: " + (inputOnion.checked ? "Yes" : "No"),
