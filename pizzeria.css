@@ -231,7 +231,7 @@ textarea {
     font-size: 20px;
     font-family: inherit;
     box-shadow: 2px 2px 2px 2px #565656b2;
-    padding: none;
+    padding: 0;
 }
 
 #garlicBreadPanel-options button:hover {
