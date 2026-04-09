@@ -3,7 +3,7 @@ const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 console.log("JavaScript: \"Ordering Pizza...\"");
 
 (async () => {
-    await fetch(`${URL}`);
+    await fetch(URL);
 })();
 
 const ordered = document.getElementById("ordered");
