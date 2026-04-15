@@ -2,9 +2,12 @@ const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 
 console.log("JavaScript: \"Ordering Pizza...\"");
 
-(async () => {
-    await fetch(URL);
-})();
+if (!sessionStorage.getItem("ordered")) {
+    (async () => {
+        await fetch(URL);
+    })();
+    sessionStorage.setItem("ordered", true);
+}
 
 const ordered = document.getElementById("ordered");
 const crust = document.getElementById("crust");
