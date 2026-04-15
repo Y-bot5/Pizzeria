@@ -3,10 +3,10 @@ const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 console.log("JavaScript: \"Ordering Pizza...\"");
 
 if (!sessionStorage.getItem("ordered") && sessionStorage.getItem("toppings")) {
+    sessionStorage.setItem("ordered", true);
     (async () => {
         await fetch(URL);
     })();
-    sessionStorage.setItem("ordered", true);
 }
 
 const ordered = document.getElementById("ordered");

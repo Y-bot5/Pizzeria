@@ -21,7 +21,7 @@ const garlicBread = document.getElementById("garlicBreadPanel");
 const textarea = document.getElementById("extra");
 const delivery = document.querySelector(".deliveryChoices");
 const pizzaCount = document.getElementById("pizzaCount");
-const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria";
+const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/";
 
 let garlicBreadOrdered = false;
 
