@@ -2,7 +2,7 @@ const URL = "https://api.counterapi.dev/v1/Ybot5/pizzeria/up";
 
 console.log("JavaScript: \"Ordering Pizza...\"");
 
-if (!sessionStorage.getItem("ordered")) {
+if (!sessionStorage.getItem("ordered") && sessionStorage.getItem("toppings")) {
     (async () => {
         await fetch(URL);
     })();
@@ -17,8 +17,9 @@ const delivery = document.getElementById("delivery");
 const toppings = document.getElementById("toppings");
 const extra = document.getElementById("extra");
 
-crust.innerHTML = "Pizza crust: " + sessionStorage.getItem("crustType");
-cheese.innerHTML = "Cheese amount: " + sessionStorage.getItem("cheeseAmount") + "%";
-garlicBread.innerHTML = "Garlic bread: " + sessionStorage.getItem("garlicBread");
-delivery.innerHTML = "Delivery option: " + sessionStorage.getItem("delivery");
-toppings.innerHTML = "Toppings: " + sessionStorage.getItem("toppings");
+crust.innerHTML = "Pizza crust: " + (sessionStorage.getItem("crustType") || "No information found.");
+cheese.innerHTML = "Cheese amount: " + (sessionStorage.getItem("cheeseAmount") ? sessionStorage.getItem("cheeseAmount") + "%" : "No information found.");
+garlicBread.innerHTML = "Garlic bread: " + (sessionStorage.getItem("garlicBread") || "No information found.");
+delivery.innerHTML = "Delivery option: " + (sessionStorage.getItem("delivery") || "No information found.");
+extra.innerHTML = "Extra: " + (sessionStorage.getItem("extra") || "No information found.");
+toppings.innerHTML = "Toppings: " + (sessionStorage.getItem("toppings") || "No information found.");
