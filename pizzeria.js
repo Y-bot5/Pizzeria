@@ -95,7 +95,11 @@ function submitPizzaToMemory() {
     sessionStorage.setItem("cheeseAmount", inputCheese.value);
     sessionStorage.setItem("garlicBread", garlicBreadOrdered ? "Yes" : "No");
     sessionStorage.setItem("delivery", delivery.querySelector("input[name='delivery']:checked").value);
-    sessionStorage.setItem("extra", "\"" + textarea.value + "\"");
+    if (textarea.value === "") {
+        sessionStorage.setItem("extra", "None");
+    } else {
+        sessionStorage.setItem("extra", "\"" + textarea.value + "\"");
+    }
     sessionStorage.setItem("toppings", [
         "<br>    ○ Ham: " + (inputHam.checked ? "Yes" : "No"),
         "<br>    ○ Onion: " + (inputOnion.checked ? "Yes" : "No"),
